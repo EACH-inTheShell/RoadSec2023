@@ -28,19 +28,20 @@ Feito para nossa atividade como comunidade no RoadSec 2023.
 * [Pwn College's Dojo](https://dojo.pwn.college/)
 * [PwnableKR](https://pwnable.kr/)
 * [Exploit Education's Phoenix](https://exploit.education/phoenix/)
+* [Nightmare](https://github.com/guyinatuxedo/nightmare)
 
 ### Web
 
 * XSS [to make]
 * LFI [to make]
-* File Upload [to make]
+* Upload de Arquivos [to make]
 * SQLi [to make]
-* Command Injection [to make]
+* Injeção de Comandos [to make]
 * SSTI [to make]
-* XXE [to make]
 * SSRF [to make]
-* Deserialization [to make]
-* Information Disclosure [to make]
+* XXE [to make]
+* Deserialização Insegura [to make]
+* Divulgação de Informação [to make]
 
 ### Redes
 
@@ -48,8 +49,8 @@ Feito para nossa atividade como comunidade no RoadSec 2023.
 	* HTTP
 	* Arquivos
 	* SSL/TLS
+	* DNS Exfil
 	* Crackear Wifi [to make]
-	* DNS Exfil [to make]
 * DNS
 	* Diferentes Tipos de Registro [to make]
 	* Lookup Reverso [to make]

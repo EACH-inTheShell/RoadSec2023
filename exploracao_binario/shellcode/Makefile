@@ -2,4 +2,4 @@
 all: simples
 
 simples: simples.c
-	gcc -fno-stack-protector -o $@ $^
+	gcc -z execstack -o $@ $^

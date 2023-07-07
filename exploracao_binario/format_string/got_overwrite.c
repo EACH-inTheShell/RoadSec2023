@@ -6,12 +6,16 @@ void win(void)
 	system("cat ./flag.txt");
 }
 
-int main(int argc, char *argv[])
+int main(void)
 {
-	if (argc != 2)
-		return -1;
+	char buffer[64];
 
-	printf(argv[1]);
+	setvbuf(stdin, NULL, _IONBF, 0);
+	setvbuf(stdout, NULL, _IONBF, 0);
+
+	fgets(buffer, 64, stdin);
+
+	printf(buffer);
 
 	puts("\nSera que vai funcionar?");
 }

@@ -4,8 +4,8 @@
 int main(void)
 {
 	struct {
-		int value;
 		char buffer[32];
+		int value;
 	} data;
 
 	data.value = 0;
@@ -13,6 +13,6 @@ int main(void)
 	gets(data.buffer);
 
 	if (data.value == 0x1337c0de) {
-		system("cat ./flag.txt");
+		puts("Ja eh um bom comeco :):");
 	}
 }

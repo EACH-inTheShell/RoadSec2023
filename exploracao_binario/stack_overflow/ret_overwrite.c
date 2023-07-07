@@ -3,7 +3,7 @@
 
 void win(void)
 {
-	system("cat ./flag.txt");
+	puts("O bom filho a casa torna");
 }
 
 int main(void)
