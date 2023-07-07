@@ -2,6 +2,10 @@
 
 Feito para nossa atividade como comunidade no RoadSec 2023.
 
+## Descrição
+
+Ensinaremos algumas das vulnerabilidades mais comuns que podem aparecer em CTFs e como explora-las através de um workshop "on demand". Deixaremos disponível um site estilo CTF com varias aplicações vulneráveis e direto ao ponto, e qualquer um pode pedir para algum de nossos membros para ensinar como explorar tal vulnerabilidade, ou a pessoa pode também tentar resolver os desafios sozinha como um CTF normalmente aconteceria.
+
 ## Conteúdos
 
 ### Exploração de Binários
