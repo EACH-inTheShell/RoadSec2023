@@ -23,8 +23,8 @@ Ensinaremos algumas das vulnerabilidades mais comuns que podem aparecer em CTFs 
 	* Unlink
 * Shellcode
 	* Simples
-	* Sem Open [to make]
-	* Side Channel [to make]
+	* Sem Open
+	* Side Channel
 
 #### Continue Aprendendo
 
