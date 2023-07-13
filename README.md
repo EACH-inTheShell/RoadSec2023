@@ -36,7 +36,7 @@ Ensinaremos algumas das vulnerabilidades mais comuns que podem aparecer em CTFs 
 
 ### Web
 
-* XSS [to make]
+* XSS
 * LFI [to make]
 * Upload de Arquivos [to make]
 * SQLi [to make]
