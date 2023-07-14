@@ -1,6 +1,6 @@
 .PHONY: all start stop logs docker
 
-CONTAINER_NAME=eits_file_upload
+CONTAINER_NAME=eits_command_injection
 
 all: start
 

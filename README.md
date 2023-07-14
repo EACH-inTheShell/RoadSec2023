@@ -40,12 +40,12 @@ Ensinaremos algumas das vulnerabilidades mais comuns que podem aparecer em CTFs 
 * LFI
 * Upload de Arquivos
 * SQLi [to make]
-* Injeção de Comandos [to make]
+* Injeção de Comandos
 * SSTI
 * SSRF [to make]
 * XXE [to make]
 * Deserialização Insegura [to make]
-* Divulgação de Informação [to make]
+* IDOR
 
 #### Continue Aprendendo
 
