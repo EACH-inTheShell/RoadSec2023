@@ -55,10 +55,6 @@ Ensinaremos algumas das vulnerabilidades mais comuns que podem aparecer em CTFs 
 	* SSL/TLS
 	* DNS
 	* Wifi
-* DNS
-	* Diferentes Tipos de Registro [to make]
-	* Lookup Reverso [to make]
-	* Forçar Zone Transfer [to make]
 
 #### Continue Aprendendo
 
