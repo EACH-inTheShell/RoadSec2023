@@ -1,9 +1,8 @@
 const express = require('express')
 
+
 const app = express()
 const port = 3000
-
-
 
 app.get('/', (req, res) => {
 	const body = `<!DOCTYPE html>
@@ -61,18 +60,16 @@ app.get('/perfil/:userId', (req, res) => {
 				<title>EiTSGRAM - Fazer Perfil</title>
 			</head>
 			<body>
-				<form name="meu_form">
+				<h1>Criar Perfil :)</h1>
 
-					<h1>Criar Perfil :)</h1>
-				
-					<input type="text" id="nameId" placeholder="Seu nome aqui" required="required" name="name" />
-					<label for="name">Nome</label>
-				
-					<textarea placeholder="Fale sobre você :)"></textarea>
-				
-					<input type="submit" class="send" onclick="Send();" value="Send" />
-				</form>
+				<input type="text" id="nameId" placeholder="Seu nome aqui" name="name" required />
+				<label for="name">Nome</label>
+
+				<textarea placeholder="Fale sobre você :)"></textarea>
+
+				<br/><button class="send" onclick="Send()">Enviar</button>
 				<script>
+					const form = document.getElementById("meu_form");
 					function Send() {
 						var name = document.getElementById("nameId");
 						if (name.value != "") {
