@@ -12,7 +12,7 @@ def index():
         <!DOCTYPE html>
         <html>
           <head>
-            <title>No Filter</title>
+            <title>EiTS - SSTI</title>
           </head>
           <body>Ola, ''' + (nome if nome != None else 'pessoa anonima') + '''!
             <form>
