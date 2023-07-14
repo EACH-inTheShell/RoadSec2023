@@ -37,15 +37,21 @@ Ensinaremos algumas das vulnerabilidades mais comuns que podem aparecer em CTFs 
 ### Web
 
 * XSS
-* LFI [to make]
-* Upload de Arquivos [to make]
+* LFI
+* Upload de Arquivos
 * SQLi [to make]
 * Injeção de Comandos [to make]
-* SSTI [to make]
+* SSTI
 * SSRF [to make]
 * XXE [to make]
 * Deserialização Insegura [to make]
 * Divulgação de Informação [to make]
+
+#### Continue Aprendendo
+
+* [PortSwigger's Web Security Academy](https://portswigger.net/web-security)
+* [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
+* [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/)
 
 ### Redes
 
@@ -55,10 +61,6 @@ Ensinaremos algumas das vulnerabilidades mais comuns que podem aparecer em CTFs 
 	* SSL/TLS
 	* DNS
 	* Wifi
-* DNS
-	* Diferentes Tipos de Registro [to make]
-	* Lookup Reverso [to make]
-	* Forçar Zone Transfer [to make]
 
 #### Continue Aprendendo
 
