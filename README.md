@@ -39,7 +39,7 @@ Ensinaremos algumas das vulnerabilidades mais comuns que podem aparecer em CTFs 
 * XSS
 * LFI
 * Upload de Arquivos
-* SQLi [to make]
+* SQLi
 * Injeção de Comandos
 * SSTI
 * SSRF [to make]

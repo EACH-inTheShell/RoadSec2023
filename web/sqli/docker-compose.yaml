@@ -1,0 +1,14 @@
+services:
+  challenge:
+    build: .
+    ports:
+      - 8080:80
+  database:
+    image: mysql:8.0
+    volumes:
+      - ./migration.sql:/docker-entrypoint-initdb.d/migration.sql
+    environment:
+      - MYSQL_DATABASE=eits_sqli
+      - MYSQL_USER=eits_sqli
+      - MYSQL_PASSWORD=eits_sqli
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
