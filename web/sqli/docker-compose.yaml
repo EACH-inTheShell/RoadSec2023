@@ -2,7 +2,7 @@ services:
   challenge:
     build: .
     ports:
-      - 8080:80
+      - 42006:80
   database:
     image: mysql:8.0
     volumes:

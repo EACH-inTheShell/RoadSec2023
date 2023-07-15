@@ -5,7 +5,7 @@ CONTAINER_NAME=eits_lfi
 all: start
 
 start: stop docker
-	docker run --rm -d --name ${CONTAINER_NAME} -p 8080:80 ${CONTAINER_NAME}
+	docker run --rm -d --name ${CONTAINER_NAME} -p 42002:80 ${CONTAINER_NAME}
 
 stop:
 	docker stop ${CONTAINER_NAME} ; true

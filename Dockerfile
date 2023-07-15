@@ -1,15 +1,20 @@
-FROM python:3.11
+FROM httpd:2.4
 
 EXPOSE 8000
 
 RUN apt update && apt install -y zip
 
-COPY ./README.md /srv/desafios/
-COPY ./exploracao_binario/ /srv/desafios/exploracao_binario/
-COPY ./web/ /srv/desafios/web/
-COPY ./redes/ /srv/desafios/redes/
-RUN cd /srv/ && tar caf desafios.tar.gz desafios/ && zip desafios.zip desafios/ && mv desafios.tar.gz desafios.zip desafios/
+COPY ./my-httpd.conf /usr/local/apache2/conf/httpd.conf
 
-WORKDIR /srv/desafios/
+COPY ./README.md /tmp/desafios/
+COPY ./exploracao_binario/ /tmp/desafios/exploracao_binario/
+COPY ./web/ /tmp/desafios/web/
+COPY ./redes/ /tmp/desafios/redes/
 
-CMD python -m http.server
+RUN cd /tmp/ &&\
+    tar caf desafios.tar.gz desafios/ &&\
+    zip -r desafios.zip desafios/ &&\
+    mv desafios.tar.gz desafios.zip desafios/
+
+RUN rm -r /usr/local/apache2/htdocs/* &&\
+    mv /tmp/desafios/* /usr/local/apache2/htdocs/

@@ -2,6 +2,6 @@ services:
   externo:
     build: ./externo/
     ports:
-      - 8080:80
+      - 42007:80
   interno:
     build: ./interno/

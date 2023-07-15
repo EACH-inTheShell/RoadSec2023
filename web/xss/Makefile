@@ -5,7 +5,7 @@ CONTAINER_NAME=eits_xss
 all: start
 
 start: stop docker
-	docker run --rm -d --name ${CONTAINER_NAME} -p 3000:3000 ${CONTAINER_NAME}
+	docker run --rm -d --name ${CONTAINER_NAME} -p 42000:3000 ${CONTAINER_NAME}
 
 stop:
 	docker stop ${CONTAINER_NAME} ; true
