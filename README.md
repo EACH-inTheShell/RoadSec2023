@@ -42,7 +42,7 @@ Ensinaremos algumas das vulnerabilidades mais comuns que podem aparecer em CTFs 
 * SQLi
 * Injeção de Comandos
 * SSTI
-* SSRF [to make]
+* SSRF
 * XXE [to make]
 * Deserialização Insegura [to make]
 * IDOR
