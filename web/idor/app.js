@@ -3,6 +3,29 @@ const express = require('express')
 
 const app = express()
 const port = 3000
+const style = `
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+body {
+	background-color: #222831;
+	font-family: 'Roboto Mono', monospace;
+	color: #e4e4e4;
+	min-height: 95vh;
+	max-width: 100vw;
+	max-height: 100vh;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+button, input, textarea {
+	all: unset;
+	border: 1px solid white;
+	padding: 5px;
+	color: #e4e4e4;
+	text-align: center;
+}
+`;
 
 app.get('/', (req, res) => {
 	const body = `<!DOCTYPE html>
@@ -10,6 +33,7 @@ app.get('/', (req, res) => {
 	<head>
 		<meta charset="UTF-8">
 		<title>EiTS - IDOR</title>
+		<style>${style}</style>
 	</head>
 	<body>
 		<h1>EiTSGRAM :):</h1>
@@ -26,15 +50,17 @@ app.get('/perfil/:userId', (req, res) => {
 		<html>
 			<head>
 				<meta charset="UTF-8">
+				<title>EiTSGRAM - Fazer Perfil</title>
 				<style>
+					${style}
+					label {
+						margin-top: 10px;
+					}
 					input, textarea {
 						width: 200px;
 						padding: 10px;
-						color: black;
 						margin-left: 20px;
 						margin-top: 10px;
-						-webkit-border-radius: 5px;
-						-moz-border-radius: 5px;
 						border: 1px solid;
 					}
 					form {
@@ -57,14 +83,14 @@ app.get('/perfil/:userId', (req, res) => {
 						max-width: 400px;
 					}
 				</style>
-				<title>EiTSGRAM - Fazer Perfil</title>
 			</head>
 			<body>
 				<h1>Criar Perfil :)</h1>
 
-				<input type="text" id="nameId" placeholder="Seu nome aqui" name="name" required />
 				<label for="name">Nome</label>
+				<input type="text" id="nameId" placeholder="Seu nome aqui" name="name" required />
 
+				<label>Descrição</label>
 				<textarea placeholder="Fale sobre você :)"></textarea>
 
 				<br/><button class="send" onclick="Send()">Enviar</button>
@@ -98,6 +124,7 @@ app.get('/perfil/:userId', (req, res) => {
 						top: 350;
 					}
 				</style>
+				<style>${style}</style>
 			</head>
 			<body>
 				<h1>Admin :):</h1>
@@ -114,6 +141,7 @@ app.get('/perfil/:userId', (req, res) => {
 			<head>
 				<meta charset="UTF-8">
 				<title>EiTSGRAM - Bem-Vinde!</title>
+				<style>${style}</style>
 			</head>
 			<body>
 				<h1>Mayfly :):</h1>
@@ -129,6 +157,7 @@ app.get('/perfil/:userId', (req, res) => {
 			<head>
 				<meta charset="UTF-8">
 				<title>EiTSGRAM - Bem-Vinde!</title>
+				<style>${style}</style>
 			</head>
 			<body>
 				<h1>Uxie :):</h1>
@@ -144,6 +173,7 @@ app.get('/perfil/:userId', (req, res) => {
 			<head>
 				<meta charset="UTF-8">
 				<title>EiTSGRAM - Bem-Vinde!</title>
+				<style>${style}</style>
 			</head>
 			<body>
 				<h1>Doombringer Azurai :):</h1>
@@ -169,6 +199,7 @@ app.get('/perfil/:userId', (req, res) => {
 					}
 				</style>
 				<title>EiTSGRAM - IDOR</title>
+				<style>${style}</style>
 			</head>
 			<body>
 				<h1>EiTSGRAM :):</h1>

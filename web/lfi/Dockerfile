@@ -8,4 +8,4 @@ USER www-data
 RUN rm /var/log/apache2/access.log /var/log/apache2/error.log /var/log/apache2/other_vhosts_access.log &&\
     touch /var/log/apache2/access.log /var/log/apache2/error.log /var/log/apache2/other_vhosts_access.log
 
-COPY . /var/www/html/
+COPY ./index.php ./styles.css ./mensagem.txt ./atividade.txt /var/www/html/

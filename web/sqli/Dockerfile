@@ -4,4 +4,4 @@ EXPOSE 80
 
 RUN docker-php-ext-install mysqli pdo pdo_mysql && docker-php-ext-enable pdo_mysql
 
-COPY . /var/www/html/
+COPY ./index.php ./styles.css /var/www/html/

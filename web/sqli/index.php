@@ -3,8 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>EiTS - SQLi</title>
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
+		<div>
 		<h1>Login</h1>
 		<?php
 			if (isset($_POST["usuario"]) && isset($_POST["senha"])) {
@@ -25,5 +27,6 @@
 			<input type="password" name="senha" placeholder="senha" required>
 			<input type="submit" value="entrar">
 		</form>
+		</div>
 	</body>
 </html>

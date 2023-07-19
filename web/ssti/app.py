@@ -13,12 +13,39 @@ def index():
         <html>
           <head>
             <title>EiTS - SSTI</title>
+            <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+            body {
+              background-color: #222831;
+              font-family: 'Roboto Mono', monospace;
+              color: #e4e4e4;
+              min-height: 95vh;
+              max-width: 100vw;
+              max-height: 100vh;
+              display: flex;
+              flex-flow: column;
+              justify-content: center;
+              align-items: center;
+            }
+            input {
+              all: unset;
+              border: 1px solid white;
+              margin-top: 10px;
+              padding: 5px;
+              color: #e4e4e4;
+              text-align: center;
+            }
+            </style>
           </head>
-          <body>Ola, ''' + (nome if nome != None else 'pessoa anonima') + '''!
-            <form>
-              <input type="text" name="nome" placeholder="nome" value="{{nome}}" autofocus="">
-              <input type="submit" value="give name">
-            </form>
+
+          <body>
+            <div>
+              Ola, ''' + (nome if nome != None else 'pessoa anonima') + '''!
+              <form>
+                <input type="text" name="nome" placeholder="nome" value="{{nome}}" autofocus="">
+                <input type="submit" value="give name">
+              </form>
+            </div>
           </body>
         </html>'''
 

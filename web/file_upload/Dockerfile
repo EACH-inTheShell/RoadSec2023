@@ -6,4 +6,4 @@ USER www-data
 ENV FLAG="Arquivos, arquivos e mais arquivos"
 RUN mkdir -p /var/www/html/uploads
 
-COPY . /var/www/html/
+COPY ./index.php ./enviar.php ./styles.css /var/www/html/

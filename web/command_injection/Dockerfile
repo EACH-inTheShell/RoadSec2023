@@ -6,4 +6,4 @@ ENV FLAG="Comandos sao uma coisa engracada, ne?"
 
 RUN apt update && apt install -y iputils-ping
 
-COPY . /var/www/html/
+COPY ./index.php ./styles.css /var/www/html/

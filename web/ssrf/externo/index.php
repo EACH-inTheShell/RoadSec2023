@@ -3,8 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>EiTS - SSRF</title>
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
+		<div>
 		<h1>Informações sobre IPs</h1>
 		<?php
 			if (isset($_POST["comando"])) {
@@ -47,5 +49,6 @@
 			<input type="text" name="uri" placeholder="URI da API" required autofocus>
 			<input type="submit" value="ver">
 		</form>
+		</div>
 	</body>
 </html>

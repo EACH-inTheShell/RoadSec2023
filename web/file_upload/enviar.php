@@ -11,6 +11,7 @@ if (isset($_FILES["arquivo"])) {
 	<head>
 		<meta charset="UTF-8">
 		<title>EiTS - Upload de Arquivo</title>
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
 		<?php if ($successfullyUploaded) { ?>

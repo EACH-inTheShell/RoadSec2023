@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>EiTS - Upload de Arquivos</title>
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
 		<form action="/enviar.php" method="post">
