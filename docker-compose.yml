@@ -1,0 +1,83 @@
+version: '3.8'
+services:
+  challs:
+    image: challs
+    hostname: challs
+    container_name: challs
+    build: ./
+    ports: [ "80:80" ]
+
+  idor:
+    image: web_idor
+    hostname: web_idor
+    container_name: web_idor
+    build: ./web/idor
+    ports: [ "42000:3000" ]
+
+  command_injection:
+    image: web_command_injection
+    hostname: web_command_injection
+    container_name: web_command_injection
+    build: ./web/command_injection
+    ports: [ "42001:80" ]
+
+  file_upload:
+    image: web_file_upload
+    hostname: web_file_upload
+    container_name: web_file_upload
+    build: ./web/file_upload
+    ports: [ "42002:80" ]
+
+  lfi:
+    image: web_lfi
+    hostname: web_lfi
+    container_name: web_lfi
+    build: ./web/lfi
+    ports: [ "42003:80" ]
+
+  sqli-chall:
+    image: web_sqli
+    hostname: web_sqli
+    container_name: web_sqli
+    build: ./web/sqli
+    ports: [ "42004:80" ]
+
+  sqli-db:
+    image: mysql:8.0
+    hostname: web_sqli_db
+    container_name: web_sqli_db
+    volumes:
+      - ./web/sqli/migration.sql:/docker-entrypoint-initdb.d/migration.sql
+    environment:
+      - MYSQL_DATABASE=eits_sqli
+      - MYSQL_USER=eits_sqli
+      - MYSQL_PASSWORD=eits_sqli
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+
+  ssti:
+    image: web_ssti
+    hostname: web_ssti
+    container_name: web_ssti
+    build: ./web/ssti
+    ports: [ "42005:8000" ]
+
+  xss:
+    image: web_xss
+    hostname: web_xss
+    container_name: web_xss
+    build:
+      context: ./web/xss
+    ports: [ "42006:3000" ]
+
+  ssrf-internal:
+    image: web_ssrf_internal
+    hostname: web_ssrf_internal
+    container_name: web_ssrf_internal
+    build: ./web/ssrf/interno
+
+  ssrf-external:
+    image: web_ssrf_external
+    hostname: web_ssrf_external
+    container_name: web_ssrf_external
+    build: ./web/ssrf/externo
+    ports: [ "42007:80" ]

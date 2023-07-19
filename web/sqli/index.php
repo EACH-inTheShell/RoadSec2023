@@ -8,7 +8,7 @@
 		<h1>Login</h1>
 		<?php
 			if (isset($_POST["usuario"]) && isset($_POST["senha"])) {
-				$db = mysqli_connect("database", "eits_sqli", "eits_sqli", "eits_sqli");
+				$db = mysqli_connect("sqli-db", "eits_sqli", "eits_sqli", "eits_sqli");
 				$res = mysqli_query($db, "SELECT * FROM usuarios WHERE usuario='" . $_POST["usuario"] . "' AND senha='" . $_POST["senha"] . "'");
 				$linha = mysqli_fetch_assoc($res);
 				if ($linha != null) { ?>

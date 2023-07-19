@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 	</head>
 	<body>
 		<h1>EiTSGRAM :):</h1>
-		<a href="http://localhost:3000/perfil/5"><button>Criar Perfil</button><a>
+		<a href="/perfil/5"><button>Criar Perfil</button><a>
 	</body>
 </html>`;
 
@@ -173,7 +173,7 @@ app.get('/perfil/:userId', (req, res) => {
 			<body>
 				<h1>EiTSGRAM :):</h1>
 				<h2>Perfil não existe!</h2>
-				<a href="http://localhost:3000/perfil/5"><button>Criar Perfil</button><a>
+				<a href="/perfil/5"><button>Criar Perfil</button><a>
 				<p class="flag">eits{ops_nao_eh_bem_por_aqui}</p>
 			</body>
 		</html>`;

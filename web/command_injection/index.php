@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>EiTS - LFI</title>
+		<title>EiTS - Injeção de código</title>
 	</head>
 	<body>
 		<h1>Ping</h1>
